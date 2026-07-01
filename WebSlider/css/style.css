@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+.mySlider{
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow:hidden;
+    position: relative;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
+}
+.mySlider .slides{
+ width: 400%;   
+display: flex;
+height: 100%;
+transition-duration: 1s;
+}
+.mySlider .slides .slide{
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
+.mySlider .slides .slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.mySlider .slides .slide .text{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    padding: 40px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mySlider .button{
+    position: absolute;
+    top: calc(50% - 50px);
+    left: 0px;
+    background-color: rgba(0,0,0,0.4);
+    width: 5%;
+    height: 100px;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 10px 10px 0px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+}
+
+.mySlider .button:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.mySlider #rightButton{
+    left: auto;
+    right: 0px;
+    rotate: 180deg;
+}
+
+.mySlider .button:active{
+    transform: translateX(-10px);
+}
+
+.mySlider .nav{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+.mySlider .nav span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    border: solid;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.mySlider .nav span:hover{
+    background-color: #fff;
+    scale: 1.2;
+}
+
+.activeNavButton{
+    background-color: black !important;
+    border-color: white !important;
+    border-radius: 25% !important;
+}

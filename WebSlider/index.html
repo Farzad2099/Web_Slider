@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="mySlider" >
+        <div class="button" id="leftButton" onclick="pre()" onmouseenter="disableInterval()" onmouseout="enableInterval()">&lt;</div>
+        <div class="button" id="rightButton" onclick="next()" onmouseenter="disableInterval()" onmouseout="enableInterval()">&lt;</div>
+        <div class="slides">
+        <div class="slide">
+            <img src="pictures/p1.jpg" alt="" >
+            <div class="text">
+            <h1>Slide1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero laboriosam eos nam vitae omnis nulla atque possimus aperiam voluptatum animi. Commodi, placeat recusandae tenetur optio repellat dolorem doloribus necessitatibus laudantium laborum quos est incidunt inventore, consectetur soluta nesciunt officiis natus magni ipsum aspernatur tempora aperiam perferendis esse? Mollitia, sed iusto!</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="pictures/p2.jpg" alt="">
+            <div class="text">
+            <h1>Slide2</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero laboriosam eos nam vitae omnis nulla atque possimus aperiam voluptatum animi. Commodi, placeat recusandae tenetur optio repellat dolorem doloribus necessitatibus laudantium laborum quos est incidunt inventore, consectetur soluta nesciunt officiis natus magni ipsum aspernatur tempora aperiam perferendis esse? Mollitia, sed iusto!</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="pictures/p3.jpg" alt="">
+            <div class="text">
+            <h1>Slide3</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero laboriosam eos nam vitae omnis nulla atque possimus aperiam voluptatum animi. Commodi, placeat recusandae tenetur optio repellat dolorem doloribus necessitatibus laudantium laborum quos est incidunt inventore, consectetur soluta nesciunt officiis natus magni ipsum aspernatur tempora aperiam perferendis esse? Mollitia, sed iusto!</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="pictures/p4.jpg" alt="">
+            <div class="text">
+            <h1>Slide4</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero laboriosam eos nam vitae omnis nulla atque possimus aperiam voluptatum animi. Commodi, placeat recusandae tenetur optio repellat dolorem doloribus necessitatibus laudantium laborum quos est incidunt inventore, consectetur soluta nesciunt officiis natus magni ipsum aspernatur tempora aperiam perferendis esse? Mollitia, sed iusto!</p>
+            </div>
+        </div>
+    </div>
+    <div class="nav"> 
+        <span onclick="changeSlide('0')" onmouseenter="disableInterval()" onmouseout="enableInterval()"></span> 
+        <span onclick="changeSlide('1')" onmouseenter="disableInterval()" onmouseout="enableInterval()"></span> 
+        <span onclick="changeSlide('2')" onmouseenter="disableInterval()" onmouseout="enableInterval()"></span> 
+        <span onclick="changeSlide('3')" onmouseenter="disableInterval()" onmouseout="enableInterval()"></span>
+    </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
